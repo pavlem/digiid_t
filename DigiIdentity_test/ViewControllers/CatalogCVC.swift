@@ -32,16 +32,13 @@ class CatalogCVC: UICollectionViewController, Storyboarded {
         }
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
         
         catalogVM = CatalogVM(isLoadingScreenShown: true)
-
         catalogVM.fetchCatalogs { [weak self] result in
             guard let `self` = self else { return }
-
-            self.catalogVM = CatalogVM(isLoadingScreenShown: false)
-
+  
             switch result {
             case .failure(let err):
                 AlertHelper.simpleAlert(message: err.errorDescription, vc: self) {
@@ -51,6 +48,10 @@ class CatalogCVC: UICollectionViewController, Storyboarded {
                 self.catalogs = catalogs
                 self.reloadCollectionView()
                 self.catalogVM.persist(catalogs: catalogs)
+            }
+            
+            DispatchQueue.main.async {
+                self.catalogVM = CatalogVM(isLoadingScreenShown: false)
             }
         }
     }

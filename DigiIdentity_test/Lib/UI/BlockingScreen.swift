@@ -17,13 +17,15 @@ class BlockingScreen: UIView {
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+    
+    static var isOkToBlock = true
 }
 
 extension BlockingScreen {
     static func start(vc: UIViewController? = nil) {
         
         self.stop()
-
+        
         DispatchQueue.main.async {
             
             let blockingScr = BlockingScreen(frame: UIScreen.main.bounds)
@@ -55,7 +57,6 @@ extension BlockingScreen {
                         } completion: { (_) in
                             view.removeFromSuperview()
                         }
-                        
                     }
                 }
             }

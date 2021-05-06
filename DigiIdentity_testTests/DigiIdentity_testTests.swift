@@ -114,8 +114,7 @@ class DigiIdentity_testTests: XCTestCase {
             do {
                 let data = try Data(contentsOf: fileUrl, options: [])
                 completion(data as Data)
-            } catch let error {
-                print(error.localizedDescription)
+            } catch {
                 completion(nil)
             }
         }
