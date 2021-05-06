@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2B2FD65D2642C921003E2CA6 /* marlove.net.cer in Resources */ = {isa = PBXBuildFile; fileRef = 2B5D164C2642B42F008A1EBB /* marlove.net.cer */; };
 		2B2FD65F2642CB1B003E2CA6 /* URLSessionPinningDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2FD65E2642CB1B003E2CA6 /* URLSessionPinningDelegate.swift */; };
 		2B35A12A2642EB9800E75D57 /* CatalogDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B35A1292642EB9800E75D57 /* CatalogDetailsVC.swift */; };
 		2B35A12C2642ED8B00E75D57 /* CatalogDetailVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B35A12B2642ED8B00E75D57 /* CatalogDetailVM.swift */; };
@@ -18,6 +17,7 @@
 		2B55DAD2263D8863004D59E5 /* CatalogCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B55DAD1263D8863004D59E5 /* CatalogCell.swift */; };
 		2B5D164A26427FC8008A1EBB /* catalogsMOC.json in Resources */ = {isa = PBXBuildFile; fileRef = 2B5D164926427FC8008A1EBB /* catalogsMOC.json */; };
 		2B5D164B26427FCC008A1EBB /* catalogsMOC.json in Resources */ = {isa = PBXBuildFile; fileRef = 2B5D164926427FC8008A1EBB /* catalogsMOC.json */; };
+		2B88F73526441F3900C72CBF /* marlove.net.cer in Resources */ = {isa = PBXBuildFile; fileRef = 2B88F73426441F3900C72CBF /* marlove.net.cer */; };
 		2BB164AF263FD21A00C4253B /* CatalogVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB164AE263FD21A00C4253B /* CatalogVM.swift */; };
 		2BB58C3A263ADB650069765F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB58C39263ADB650069765F /* AppDelegate.swift */; };
 		2BB58C41263ADB650069765F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BB58C3F263ADB650069765F /* Main.storyboard */; };
@@ -59,7 +59,7 @@
 		2B55DACF263D8852004D59E5 /* CatalogCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogCVC.swift; sourceTree = "<group>"; };
 		2B55DAD1263D8863004D59E5 /* CatalogCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogCell.swift; sourceTree = "<group>"; };
 		2B5D164926427FC8008A1EBB /* catalogsMOC.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = catalogsMOC.json; sourceTree = "<group>"; };
-		2B5D164C2642B42F008A1EBB /* marlove.net.cer */ = {isa = PBXFileReference; lastKnownFileType = file; path = marlove.net.cer; sourceTree = "<group>"; };
+		2B88F73426441F3900C72CBF /* marlove.net.cer */ = {isa = PBXFileReference; lastKnownFileType = file; path = marlove.net.cer; sourceTree = "<group>"; };
 		2BB164AE263FD21A00C4253B /* CatalogVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogVM.swift; sourceTree = "<group>"; };
 		2BB58C36263ADB650069765F /* DigiIdentity_test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DigiIdentity_test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BB58C39263ADB650069765F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -215,10 +215,10 @@
 		2BB58C76263ADBA60069765F /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				2B88F73426441F3900C72CBF /* marlove.net.cer */,
 				2BB58C44263ADB650069765F /* LaunchScreen.storyboard */,
 				2BB58C42263ADB650069765F /* Assets.xcassets */,
 				2BB58C3F263ADB650069765F /* Main.storyboard */,
-				2B5D164C2642B42F008A1EBB /* marlove.net.cer */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -361,7 +361,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2BB58C46263ADB650069765F /* LaunchScreen.storyboard in Resources */,
-				2B2FD65D2642C921003E2CA6 /* marlove.net.cer in Resources */,
+				2B88F73526441F3900C72CBF /* marlove.net.cer in Resources */,
 				2BB58C43263ADB650069765F /* Assets.xcassets in Resources */,
 				2BB58C41263ADB650069765F /* Main.storyboard in Resources */,
 				2B5D164B26427FCC008A1EBB /* catalogsMOC.json in Resources */,
